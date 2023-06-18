@@ -1,0 +1,249 @@
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+body {
+  margin: 0;
+  padding: 2em;
+  background-image: url(images/bg-hero-mobile.svg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+header > img {
+  width: 35%;
+ 
+}
+
+header > button {
+  border: none;
+  padding: 10px 2em;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 3px 3px 7px grey;
+}
+.grid1 {
+  margin-top: 5em;
+}
+
+.grid1 > .box1 > h1 {
+  width: 98%;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--Very-Dark-Cyan);
+}
+
+.grid1 > .box1 > p {
+  text-align: center;
+  line-height: 1.3;
+  font-size: 1.2em;
+  width: 89%;
+  margin: auto;
+  color: var(--Very-Dark-Cyan);
+}
+
+.grid1 > .box1 > button {
+  border: none;
+  background-color: var(--Pink);
+  color: white;
+  padding: 1.4em 7em;
+  border-radius: 30px;
+  margin: 2em auto;
+  display: block;
+}
+.box2 > img {
+  margin-top: 4em;
+  width: 100%;
+}
+
+.grid2-cont {
+  margin-top: 6em;
+}
+
+.grid2-cont > .grid2 {
+  background-color: white;
+  box-shadow: 3px 3px 7px grey;
+  padding: 1em;
+  margin-bottom: 2.5em;
+}
+
+.grid2-cont > .grid2 > img {
+  width: 100%;
+}
+
+.grid2-cont > .grid2 > div {
+  width: 100%;
+}
+
+.grid2-cont > .grid2 > div > h2 {
+  text-align: center;
+  color: var(--Very-Dark-Cyan);
+}
+
+.grid2-cont > .grid2 > div > p {
+  line-height: 1.3;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  color: var(--Grayish-Blue);
+  margin-bottom: 1em;
+}
+
+.smallbox {
+  background-color: white;
+  box-shadow: 3px 6px 7px grey;
+  margin: 0.2em;
+  border-radius: 10px;
+  padding: 1em;
+  position: relative;
+  top: 3em;
+}
+.smallbox > h2 {
+  padding: 0.5em;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--Very-Dark-Cyan);
+}
+.smallbox > button {
+  border: none;
+  color: white;
+  background-color: var(--Pink);
+  padding: 1em 3em;
+  margin: auto;
+  display: block;
+  border-radius: 30px;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  padding: 1.5em;
+  margin: -2em;
+  color: white;
+}
+
+footer > .text1 > img {
+  width: 60%;
+  margin-top: 7em;
+}
+
+footer > .text1 .location {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+}
+
+footer > .text1 .location > p {
+  width: 78%;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-left: 2em;
+}
+
+@media (min-width: 900px) {
+  .grid1 {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-Pale-Cyan);
+  }
+
+  header > img {
+    width: 35%;
+    height: 20px;
+  }
+
+  .grid1 > .box1 > h1 {
+    width: 55%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+
+  .grid1 > .box1 > p {
+    text-align: left;
+    margin: 0;
+    line-height: 1.3;
+    font-size: 0.8em;
+    width: 84%;
+  }
+
+  .grid1 > .box1 > button {
+    padding: 1.5em 6em;
+    margin: 1em 0%;
+    font-size: 0.5em;
+  }
+  .grid2-cont > .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    flex-direction: row-reverse;
+    grid-template-areas: "text img";
+  }
+
+  .grid2-cont > .grid2 > div {
+    grid-area: text;
+  }
+
+  .grid2-cont > .grid2 > div > h2 {
+    text-align: left;
+  }
+  .grid2-cont > .grid2 > div > p {
+    text-align: left;
+    margin: 0;
+    margin-top: -1em;
+    font-size: 0.8em;
+    width: 75%;
+  }
+  .smallbox {
+    width: 50%;
+    margin: auto;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 2.7fr 1fr 1fr 1fr;
+  padding-left: 3em;
+  padding-right: 3em;
+    align-items: center;
+    padding-bottom: 4em;
+  }
+
+ 
+  footer > .text1 > .location > p {
+  /* font-size: 0.9em; */
+    line-height: 1.5;
+  }
+
+  .text2{
+    text-align: center;
+  }
+
+  .text3{
+    text-align: center;
+  }
+
+  .text4{
+    text-align: center;
+  }
+
+  header > img {
+    width: 10%;
+  }
+
+  footer > .text1 > img {
+    width: 35%;
+   
+  }
+  
+}
